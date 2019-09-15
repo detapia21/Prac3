@@ -1,0 +1,66 @@
+
+body{
+  background-image: url(background.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  'detalles detalles detalles detalles detalles detalles'
+  'ave1 ave2 ave3 pig1 pig2 pig3'
+  'botones botones botones botones botones botones ';
+}
+
+.grid-container > div{
+  text-align: center;
+}
+
+.details{
+  grid-area: detalles;
+}
+
+.ave1{
+  grid-area: ave1;
+}
+.ave2{
+  grid-area: ave2;
+}
+.ave3{
+  grid-area: ave3;
+}
+.cerdo1{
+  grid-area: pig1;
+}
+.cerdo2{
+  grid-area: pig2;
+}
+.cerdo3{
+  grid-area: pig3;
+}
+
+.botones{
+  display: flex;
+  justify-content: space-evenly;
+  grid-area: botones;
+  padding: 2rem;
+}
+
+.btn{
+  background-color: #17f359;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 1;
+}

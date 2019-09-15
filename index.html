@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+
+    <title>Angry Birds</title>
+</head>
+<body>
+    <div class="grid-container">
+
+        <div class="details" id="Detalles"></div>
+        <div class="ave1" id="bird1"></div>
+        <div class="ave2" id="bird2"></div>
+        <div class="ave3" id="bird3"></div>
+        <div class="cerdo1" id="pig1"></div>
+        <div class="cerdo2" id="pig2"></div>
+        <div class="cerdo3" id="pig3"></div>
+        <div class="botones">
+            <div>
+                <button class="btn" id="btn-bird1" onclick="atacar(redBird)">Atacar</button>
+                <button class="btn" id="details-bird1" onclick="detalles(redBird)">Detalles</button>
+            </div>
+            <div>
+                <button class="btn" id="btn-bird2" onclick="atacar(yellowBird)">Atacar</button>
+                <button class="btn" id="details-bird2" onclick="detalles(yellowBird)">Detalles</button>
+            </div>
+            <div>
+                <button class="btn" id="btn-bird3" onclick="atacar(blackBird)">Atacar</button>
+                <button class="btn" id="details-bird3" onclick="detalles(blackBird)">Detalles</button>
+            </div>
+            
+            <div>
+                <button class="btn" id="btn-pig1" onclick="morir(normalPig)">Morir</button>
+                <button class="btn"id="details-pig1" onclick="detalles(normalPig)">Detalles</button>
+            </div>
+            <div>
+                <button class="btn" id="btn-pig2"onclick="morir(helmetPig)">Morir</button>
+                <button class="btn" id="details-pig2" onclick="detalles(helmetPig)">Detalles</button>
+            </div>
+            <div>
+                <button class="btn" id="btn-pig3" onclick="morir(kingPig)">Morir</button>
+                <button class="btn" id="details-pig3" onclick="detalles(kingPig)">Detalles</button>
+            </div>
+        </div>
+   
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
